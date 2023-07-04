@@ -29,8 +29,11 @@ nav{
     place-items: center;
     margin-top: 10rem;
     font-family: 'Ubuntu Mono', monospace;
+    min-height: calc(100vh - 5rem);
 }
 #container{
+    margin-inline: auto;
+    width: 94vw;
     max-width: 420px;
 }
 .a-l{
