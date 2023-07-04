@@ -7,11 +7,11 @@ export default defineConfig({
   base:"/random-word/",
   plugins: [
     react(),
-    VitePWA(
-      {
+    VitePWA({
+      manifest:{
         "name": "Random Word",
         "short_name": "Rand Wrd",
-        "start_url": "/",
+        "start_url": ".",
         "display": "standalone",
         "background_color": "#ffffff",
         "theme_color": "#ffffff",
@@ -472,7 +472,7 @@ export default defineConfig({
           "src": "/sw.js"
         }
       }
-      
+    }
     )
   ],
 })
